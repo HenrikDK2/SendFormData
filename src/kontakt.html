@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="form.css">
+  <script defer src="form.js"></script>
+  <title>Form test</title>
+</head>
+
+<body>
+  <form method="POST" class="contact" novalidate>
+    <h2 class="contact__title">Kontakt mig</h2>
+
+    <input class="contact__input" placeholder="Navn" type="text" name="name" required>
+    <input class="contact__input" type="email" pattern=".+\.[a-å A-Å]{2,}$" placeholder="Email" name="email" required>
+    <input class="contact__input" type="text" placeholder="Emne" name="subject" required>
+    <textarea class="contact__input contact__input_textarea" type="text" placeholder="Besked" name="message" required></textarea>
+    <input type="submit" class="contact__submit contact__submit_hover" value="SEND" name="contact-submit">
+  </form>
+</body>
+
+</html>
