@@ -20,7 +20,7 @@
       $headers .= "Content-type: text/html; charset=utf-8\r\n";
       $headers .= 'Reply-To: '.$from . "\r\n";
       $headers .= 'X-Mailer: PHP/' . phpversion();   
-      $to = "Henrik265@outlook.dk";
+      $to = "DIN EMAIL";
       $txt = "<h2 style='margin: 0 0 50px 0'>Du har en email fra ".$name."</h2>".$message;
      
       mail($to, $subject, $txt, $headers);
